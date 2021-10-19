@@ -2,6 +2,9 @@ import json
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(ledPin, GPIO.OUT)
 
+ledPin = 19 # choose pin numbering convention (alt = BOARD)
+GPIO.setwarnings(False) # ignore warnings due to multiple scripts at same time
+
 pwm = GPIO.PWM(ledPin, 100) # PWM object on our pin at 100 Hz
 pwm.start(0) # start with LED off
 

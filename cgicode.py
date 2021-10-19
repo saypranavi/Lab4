@@ -1,6 +1,8 @@
 !/usr/bin/python37all
 import cgi
 import json
+import cgitb # optional, for better exception handling
+cgitb.enable()
 
 data = cgi.FieldStorage()
 s1 = data.getvalue('slider1')

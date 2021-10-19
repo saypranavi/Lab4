@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<form action="/cgi-bin/radio.py" method="POST">
+  <input type="radio" name="option" value="a" checked> LED 1 (blue) <br>
+  <input type="radio" name="option" value="b"> LED 2 (red) <br>
+  <input type="radio" name="option" value="c"> LED 3 (yellow) <br> <br>
+  <input type="submit" value="Submit"> <br> <br> <br>
+  <input type="range" name="slider1" min ="0" max="100" value ="50"/>
+  <input type="submit" value="Change Brightness">
+</form>
+</html>
+
+<!-- <html>
+<form action="/cgi-bin/led-pwm.py" method="POST">
+<input type="range" name="slider1" min ="0" max="100" value ="0"><br>
+<input type="submit" value="Change LED brightness">
+</form>
+</html> -->
